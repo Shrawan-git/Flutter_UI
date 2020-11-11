@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './login.dart';
 
 void main() => runApp(QuickBee());
 
@@ -80,7 +81,7 @@ class MyHomePage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 8.0, bottom: 80.0),
                 child:
-                    new Text("Quick Bee", style: new TextStyle(fontSize: 30.0)),
+                    new Text("Home Page", style: new TextStyle(fontSize: 30.0)),
               )
             ],
           ),
@@ -89,17 +90,27 @@ class MyHomePage extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 20.0, right: 10.0, top: 10.0),
-                  child: new Container(
-                    alignment: Alignment.center,
-                    height: 70.0,
-                    decoration: new BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: new BorderRadius.circular(10.0),
-                    ),
-                    child: new Text(
-                      "Sign in with Email",
-                      style: new TextStyle(fontSize: 20.0, color: Colors.white),
+                      const EdgeInsets.only(left: 20.0, right: 20.0, top: 10.0),
+                  child: GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => LoginPage(),
+                          ));
+                    },
+                    child: new Container(
+                      alignment: Alignment.center,
+                      height: 70.0,
+                      decoration: new BoxDecoration(
+                        color: Colors.green,
+                        borderRadius: new BorderRadius.circular(10.0),
+                      ),
+                      child: new Text(
+                        "Sign in with Email",
+                        style:
+                            new TextStyle(fontSize: 20.0, color: Colors.white),
+                      ),
                     ),
                   ),
                 ),
@@ -129,7 +140,7 @@ class MyHomePage extends StatelessWidget {
               Expanded(
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+                      const EdgeInsets.only(left: 10.0, right: 20.0, top: 10.0),
                   child: new Container(
                     alignment: Alignment.center,
                     height: 70.0,
