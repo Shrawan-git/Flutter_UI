@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'icon.dart';
+import 'home.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -50,17 +51,25 @@ class LoginPage extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.only(
                           left: 20.0, right: 5.0, top: 10.0),
-                      child: new Container(
-                        alignment: Alignment.center,
-                        height: 70.0,
-                        decoration: new BoxDecoration(
-                          color: Colors.green,
-                          borderRadius: new BorderRadius.circular(10.0),
-                        ),
-                        child: new Text(
-                          "Login",
-                          style: new TextStyle(
-                              fontSize: 20.0, color: Colors.white),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => HomePage()));
+                        },
+                        child: new Container(
+                          alignment: Alignment.center,
+                          height: 70.0,
+                          decoration: new BoxDecoration(
+                            color: Colors.green,
+                            borderRadius: new BorderRadius.circular(10.0),
+                          ),
+                          child: new Text(
+                            "Login",
+                            style: new TextStyle(
+                                fontSize: 20.0, color: Colors.white),
+                          ),
                         ),
                       ),
                     ),
