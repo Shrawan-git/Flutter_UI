@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               new Container(
-                margin: new EdgeInsets.only(right: 50.0, top: 50.0),
+                margin: new EdgeInsets.only(right: 60.0, top: 50.0),
                 height: 60.0,
                 width: 60.0,
                 decoration: new BoxDecoration(
@@ -49,7 +49,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               new Container(
-                margin: new EdgeInsets.only(left: 30.0, top: 60.0),
+                margin: new EdgeInsets.only(left: 20.0, top: 60.0),
                 height: 60.0,
                 width: 60.0,
                 decoration: new BoxDecoration(
@@ -61,7 +61,7 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               new Container(
-                margin: new EdgeInsets.only(left: 110.0, top: 30.0),
+                margin: new EdgeInsets.only(left: 80.0, top: 50.0),
                 height: 60.0,
                 width: 60.0,
                 decoration: new BoxDecoration(
@@ -74,6 +74,78 @@ class MyHomePage extends StatelessWidget {
               )
             ],
           ),
+          new Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(top: 8.0, bottom: 80.0),
+                child:
+                    new Text("Quick Bee", style: new TextStyle(fontSize: 30.0)),
+              )
+            ],
+          ),
+          new Row(
+            children: <Widget>[
+              Expanded(
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(left: 20.0, right: 10.0, top: 10.0),
+                  child: new Container(
+                    alignment: Alignment.center,
+                    height: 70.0,
+                    decoration: new BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: new BorderRadius.circular(10.0),
+                    ),
+                    child: new Text(
+                      "Sign in with Email",
+                      style: new TextStyle(fontSize: 20.0, color: Colors.white),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          ),
+          new Row(
+            children: <Widget>[
+              Expanded(
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(left: 20.0, right: 5.0, top: 10.0),
+                  child: new Container(
+                    alignment: Alignment.center,
+                    height: 70.0,
+                    decoration: new BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: new BorderRadius.circular(10.0),
+                    ),
+                    child: new Text(
+                      "Facebook",
+                      style: new TextStyle(fontSize: 20.0, color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding:
+                      const EdgeInsets.only(left: 10.0, right: 10.0, top: 10.0),
+                  child: new Container(
+                    alignment: Alignment.center,
+                    height: 70.0,
+                    decoration: new BoxDecoration(
+                      color: Colors.red,
+                      borderRadius: new BorderRadius.circular(10.0),
+                    ),
+                    child: new Text(
+                      "Google",
+                      style: new TextStyle(fontSize: 20.0, color: Colors.white),
+                    ),
+                  ),
+                ),
+              )
+            ],
+          )
         ],
       ),
     ));
