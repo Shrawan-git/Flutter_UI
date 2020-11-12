@@ -196,6 +196,53 @@ class MainContent extends StatelessWidget {
                           )),
                     )),
                   ],
+                ),
+                new SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  children: <Widget>[
+                    new Expanded(
+                      child: new Text(
+                        "Popular Trending",
+                        style: new TextStyle(fontSize: 18.0),
+                      ),
+                    ),
+                    new Expanded(
+                        child: new Text(
+                      "View All",
+                      style: new TextStyle(
+                        color: Colors.blue,
+                      ),
+                      textAlign: TextAlign.end,
+                    ))
+                  ],
+                ),
+                new SizedBox(
+                  height: 10.0,
+                ),
+                Row(
+                  children: <Widget>[
+                    new Expanded(
+                      child: Container(
+                        height: 140.0,
+                        child: new Column(
+                          children: <Widget>[
+                            new Container(
+                              height: 100.0,
+                              decoration: new BoxDecoration(
+                                  borderRadius: new BorderRadius.circular(5.0),
+                                  image: new DecorationImage(
+                                      image: new NetworkImage(
+                                          'https://images.pexels.com/photos/1236701/pexels-photo-1236701.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'),
+                                      fit: BoxFit.cover)),
+                            ),
+                            new Text("Travel the world")
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
                 )
               ],
             ),
